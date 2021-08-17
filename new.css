@@ -1,66 +1,45 @@
 body {
-    color: #fff;
-    background: hsl(227, 10%, 10%);
-    font: 300 20px 'Fira Sans', sans-serif;
-    
-    
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-    display: flex;
-  }
-  
-  
-  button {
-   
-    background: none;
-    color:white;
-    border: 2px solid white;
-    font: inherit;
-    line-height: 1;
-    margin: 0.5em;
-    padding: 1em 2em;
-    width: 200px;
-    height: 100px;
-  }
-
-  button:hover{
-    background: white;
-    border: 8px solid yellow;
-    color: black;
-
-  }
-
-
-  /*
- .pulse {
-    --color: #ef6eae, ;
-    --hover: #{adjust-hue(#ef6eae, , 45deg)};
-  }
-
- .pulse:hover, 
-.pulse:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(#fff,0);
+  color: #fff;
+  background: hsl(227, 10%, 10%);
+  font: 300 20px "Fira Sans", sans-serif;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
 }
 
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 var(--hover); }
-} */
+button {
+  width: 250px;
+  min-height: 50px;
+  font-size: 1rem;
+  padding: 1em 2em;
+  margin: 2px;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(95, 46, 234, 1);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(95, 46, 234, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
 
+button .ripple {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+}
 
- 
-
-
-
-
-
-
-
-
-code { 
-  color: #e4cb58;
-  font: inherit;
+@keyframes ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
 }
