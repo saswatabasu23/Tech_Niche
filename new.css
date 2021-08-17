@@ -1,0 +1,66 @@
+body {
+    color: #fff;
+    background: hsl(227, 10%, 10%);
+    font: 300 20px 'Fira Sans', sans-serif;
+    
+    
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+  
+  button {
+   
+    background: none;
+    color:white;
+    border: 2px solid white;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    width: 200px;
+    height: 100px;
+  }
+
+  button:hover{
+    background: white;
+    border: 8px solid yellow;
+    color: black;
+
+  }
+
+
+  /*
+ .pulse {
+    --color: #ef6eae, ;
+    --hover: #{adjust-hue(#ef6eae, , 45deg)};
+  }
+
+ .pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+} */
+
+
+ 
+
+
+
+
+
+
+
+
+code { 
+  color: #e4cb58;
+  font: inherit;
+}
